@@ -65,7 +65,7 @@ x-airflow-common:
     - ./plugins:/opt/airflow/plugins
     # added this code
     - ./dbt:/dbt 
-    - ./dags:/dags
+    - ./dags:/dags 
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on
